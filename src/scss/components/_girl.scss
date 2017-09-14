@@ -1,0 +1,35 @@
+.girl {
+  text-align: center;
+  
+  &__name {
+    line-height: 5.56vh;
+    text-align: center;
+  }
+  &__first-name {
+    font-size: 4.17vh;
+    font-weight: 300;
+  }
+  &__last-name {
+    font-size: 5.56vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+  }
+  
+  &__photo {
+    @include circle(27.78vh);
+    margin: 0.5rem auto 0;
+    z-index: 1;
+    
+    img {
+      display: block;
+      @include size(100%);
+    }
+  }
+  
+  &__link {
+    position: relative;
+    margin: -2.5rem auto 0;
+    z-index: 2;
+  }
+}

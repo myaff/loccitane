@@ -1,0 +1,13 @@
+.footer {
+  padding: 3.125rem;
+  
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &__logo .logo {
+    @include size(11.25rem, 2.25rem);
+  }
+}

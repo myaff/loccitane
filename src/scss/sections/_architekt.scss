@@ -1,0 +1,85 @@
+.section {
+  &--architekt {
+    margin-top: 3.5rem;
+    z-index: 4;
+  }
+  
+  &--architekt &__heading-wrapper {
+    padding: 0 2.7rem;
+  }
+  
+  &--architekt &__text {
+    max-width: 24em;
+    margin: 8.5rem 0 24.5rem;
+  }
+  
+  &--architekt &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 1rem;
+    
+    .text-block--left {
+      width: 41rem;
+      max-width: 41rem;
+      flex: 0 0 41rem;
+      padding: 0 20rem 30rem 1.5rem;
+      
+      .tp-body--base {
+        margin-top: -21.3em;
+      }
+    }
+    .text-block--right {
+      width: 26em;
+      max-width: 26em;
+      flex: 0 0 26rem;
+      padding-bottom: 6.25rem;;
+      margin: {
+        left: -1.1rem;
+        right: -3rem;
+      }
+    }
+  }
+  
+  &--architekt &__img {
+    &-wrapper--top {
+      @include absolute(top 11.5rem left 30.5rem);
+      width: 646px;
+    }
+    &--bottom {
+      @include absolute(bottom -8.5rem);
+      right: calc(50% - 1.75rem);
+      z-index: 3;
+    }
+  }
+  
+  &--architekt &__img-wrapper--top &__img {
+    @include absolute(left 0);
+    width: 100%;
+    background: {
+      repeat: no-repeat;
+      position: top center;
+      size: contain;
+    }
+    
+    @each $var in (front, middle, back) {
+      &--#{$var} {
+        background-image: url('../img/img-architekt-#{$var}.png');
+      }
+    }
+    
+    &--front {
+      top: -3em;
+      height: 591px;
+    }
+    &--middle {
+      top: 0;
+      height: 585px;
+    }
+    &--back {
+      top: 1.5rem;
+      height: 1768px;
+    }
+  }
+  
+}

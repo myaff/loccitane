@@ -1,0 +1,26 @@
+.btn-menu {
+  position: relative;
+  @include size(3.125rem, 1.875rem);
+  padding: 0;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  background: $btn-bg;
+  display: block;
+  
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    outline: none;
+  }
+  
+  .icon {
+    @include size(100%);
+  }
+  
+  &__wrapper {
+    line-height: 1;
+  }
+  
+}

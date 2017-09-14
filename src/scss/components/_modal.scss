@@ -1,0 +1,74 @@
+$modal-overlay-bg: $body-bg;
+$modal-bg: transparent;
+
+$modal-width: 45rem;
+$modal-height: 100vh;
+
+.modal {
+
+  @include absolute(top 0 left 50%);
+  @include size($modal-width, $modal-height);
+  margin-left: -1 * $modal-width / 2;
+  background: $modal-bg;
+  z-index: 0;
+  opacity: 0;
+  transform: translateY(50%) scaleY(0);
+  transition: opacity 0.3s, transform 0.3s, z-index 0.1s 0.3s;
+  
+  &__wrapper.is-fullscreen & {
+    top: 0;
+  }
+  
+  &.is-opened {
+    z-index: 1;
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+    transition: z-index 0.1s, opacity 0.3s 0.1s, transform 0.3s 0.1s;
+  }
+  
+  &--big {
+    left: 0;
+    @include size(100%);
+    margin: 0;
+    background: transparent;
+    padding-bottom: 4.63vh;
+    overflow-y: auto;
+  }
+  
+  &__wrapper {
+    @include fixed(top 0 left 0);
+    @include size(100%);
+    background: $modal-overlay-bg;
+    z-index: -1 * $z-index--modal;
+    padding-top: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s, z-index 0.1s 0.3s;
+    
+    &.is-opened {
+      opacity: 1;
+      z-index: $z-index--modal;
+      transition: z-index 0.1s, opacity 0.3s 0.1s;
+    }
+    
+    &.is-fullscreen {
+      z-index: $z-index--modal + $z-index--header;
+      padding-top: 1rem;
+      overflow-y: auto;
+    }
+  }
+  
+  .btn-close {
+    @include absolute(top 2.5rem right 0);
+    z-index: $z-index--modal + 1;
+  }
+  
+  &__content {
+    height: 100%;
+    background: transparent;
+  }
+  &--big &__content {
+    background: url('../img/popup-bg.jpg') center no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+  }
+}

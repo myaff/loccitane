@@ -1,0 +1,69 @@
+@import 'owl.carousel/core';
+@import 'owl.carousel/animate';
+//@import 'owl.carousel/autoheight';
+//@import 'owl.carousel/lazyload';
+//@import 'owl.carousel/video';
+
+$dot-bg: #000000;
+
+.owl-dots {
+  width: 100%;
+  margin: 1.5rem auto 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.owl-dot {
+  @include circle(5px, 50%);
+  margin: 0 1px;
+  padding: 0.25rem;
+  box-sizing: content-box;
+  transition: opacity 0.2s;
+  opacity: 0.15;
+  background: $dot-bg;
+  background-clip: content-box;
+  
+  cursor: pointer;
+  
+  &:hover {
+    opacity: 0.7;
+  }
+  &.active {
+    opacity: 1;
+  }
+  
+}
+
+.owl-nav {
+  @include absolute(top 14vh left 50%);
+  @include size(32.5rem, 2.5rem);
+  display: flex;
+  justify-content: space-between;
+  margin-left: -16.25rem;
+}
+.owl-prev,
+.owl-next {
+  @include size(2.5rem);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: opacity 0.2s;
+  
+  &.disabled {
+    opacity: 0.15;
+    cursor: default!important;
+  }
+}
+@each $dir in (prev, next) {
+  .owl-#{$dir} {
+    background-image: url('../img/arrow-#{$dir}.svg');
+  }
+}
+
+.carousel {
+  &--girls {
+    max-width: 35rem;
+    //margin: 5.9vh auto;
+  }
+}

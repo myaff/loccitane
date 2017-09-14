@@ -1,0 +1,66 @@
+.social {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  &--inline {
+    flex-wrap: nowrap;
+  }
+  
+  &__link {
+    display: block;
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: 1rem;
+    
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      color: inherit;
+      text-decoration: none;
+    }
+  
+    & + & {
+      margin-left: 1rem;
+    }
+  }
+  &--inline &__link {
+    padding: 0;
+  }
+  
+  &__text {
+    font-size: $font-size--small;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-left: 0.25rem;
+  }
+  
+  &__text,
+  &__icon {
+    vertical-align: middle;
+  }
+  
+  &__title {
+    width: 100%;
+    font-size: $font-size--big;
+    letter-spacing: 0.15em;
+    text-align: center;
+    margin: 0 auto 1.1vh;
+  }
+  &--inline &__title {
+    width: auto;
+    font-size: $font-size--base;
+    text-align: left;
+    margin: 0;
+  }
+  
+  &__delimiter {
+    @include size(5rem, 1px);
+    background: currentColor;
+    margin: 0 1rem;
+  }
+  
+}

@@ -1,0 +1,33 @@
+.section {
+  &--philosophy {
+    padding: 10rem 0 18rem;
+    background: url("../img/img-philosophy.png") bottom center no-repeat;
+  }
+  
+  &--philosophy &__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  &--philosophy &__heading,
+  &--philosophy &__content {
+    width: 47%;
+  }
+  
+  &--philosophy &__heading {
+    margin-left: 1.3rem;
+  }
+  
+  &--philosophy &__content {
+    margin-top: 3rem;
+    
+    .tp-body--base {
+      max-width: 23.5em;
+    }
+    
+    .tp-body--invert {
+      margin-top: 1rem;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.logo {
+
+  display: block;
+  
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  &__text {
+    font-size: $font-size--base;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+    
+  &__delimiter {
+    content: '';
+    display: block;
+    @include size(7.5rem, 1px);
+    background: currentColor;
+    margin: 0 1rem;
+  }
+  
+}

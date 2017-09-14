@@ -1,0 +1,110 @@
+.section {
+  &--music {
+    margin-top: 6rem;
+  }
+  
+  &--music &__heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding: 0 2.5rem;
+  }
+  
+  &--music &__heading {
+    margin-top: 2.5rem;
+  }
+  
+  &--music &__text {
+    max-width: 38em;
+    
+    @media #{$media-lg} {
+      margin-right: -10.3rem;
+    }
+  }
+  
+  &--music {
+    .text-block--light {
+      z-index: 3;
+    }
+    .text-block--left {
+      width: 38rem;
+      padding: 7.5rem 8.5rem 5rem;
+      margin-left: 2.5rem;
+      
+      .tp-body--base {
+        max-width: 20em;
+        margin-bottom: 5rem;
+      }
+      .tp-body--medium {
+        max-width: 31em;
+        margin-left: 1.5em;
+        margin-right: -15rem;
+      }
+    }
+    .text-block--right {
+      width: 41rem;
+      padding: 27.2rem 4rem 6rem 9.7rem;
+      margin: {
+        top: -24rem;
+        left: 21rem;
+        right: 0;
+      }
+    }
+  }
+  
+  &--music &__img-wrapper {
+    @include absolute(left 0);
+    z-index: 3;
+    width: 100%;
+    &--top {
+      top: 5rem;
+      height: 1098px;
+    }
+    &--bottom {
+      bottom: -44.5rem;
+      top: auto;
+      height: 1142px;
+    }
+  }
+  
+  &--music &__img {
+    @include absolute(left 0);
+    width: 100%;
+    background: {
+      repeat: no-repeat;
+      position: top center;
+      size: contain;
+    }
+    
+    @each $var in (top-back, top-middle, top-front, bottom-back, bottom-middle, bottom-front) {
+      &--#{$var} {
+        background-image: url('../img/img-music-#{$var}.png');
+      }
+    }
+    &--top-back {
+      top: 0;
+      height: 100%;
+    }
+    &--top-middle {
+      top: 5.5rem;
+      height: 807px;
+    }
+    &--top-front {
+      top: 3rem;
+      height: 950px;
+    }
+    &--bottom-back {
+      top: 0;
+      height: 100%;
+    }
+    &--bottom-middle {
+      top: 6rem;
+      height: 867px;
+    }
+    &--bottom-front {
+      top: 4rem;
+      height: 930px;
+    }
+  }
+}

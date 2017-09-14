@@ -1,0 +1,185 @@
+p {
+  margin: 0;
+}
+
+[class*="tp-heading"] {
+  color: $color--heading;
+}
+.tp-heading {
+  &--huge {
+    font-size: $font-size--huge;
+    line-height: 1;
+    font-family: $font--accent;
+  }
+  &--large {
+    @include heading {
+      font-size: $font-size--large;
+      line-height: 3;
+      text-transform: uppercase;
+      letter-spacing: 22px;
+    }
+  }
+  &--big {
+    @include heading {
+      font-size: $font-size--big;
+      text-transform: uppercase;
+      letter-spacing: 2.7px;
+    }
+  }
+  &--bigger {
+    @include heading {
+      font-size: $font-size--bigger;
+      letter-spacing: 1em;
+      line-height: 1.2;
+    }
+  }
+  &--medium {
+    @include heading {
+      font-size: $font-size--medium;
+      letter-spacing: 2.5px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  &--medium-wide {
+    @include heading {
+      font-size: $font-size--medium;
+      letter-spacing: 1em;
+    }
+  }
+}
+
+.tp-body {
+  &--large {
+    font-size: $font-size--large;
+    line-height: 1.2;
+    letter-spacing: 0.4em;
+  }
+  &--medium {
+    font-size: $font-size--medium;
+    letter-spacing: 3.6px;
+    color: $color--heading;
+    line-height: 1.7;
+  }
+  &--base {
+    font-size: $font-size--base;
+  }
+  &--main {
+    font-size: $font-size--main;
+    line-height: 1.25;
+  }
+  &--small {
+    font-size: $font-size--small;
+    letter-spacing: 2px;
+  }
+  
+  &--invert {
+    span {
+      display: inline-block;
+      line-height: 0.8;
+      padding-top: 0.3rem;
+      margin-bottom: 0.4em;
+      background: black;
+      color: white;
+    }
+    &[class*="large"] span {
+      line-height: 1.1;
+      padding: 0.4rem 0 0 0.75rem;
+      margin-bottom: 0;
+      vertical-align: top;
+      letter-spacing: 6px;
+    }
+  }
+}
+
+.styled-title {
+  padding-left: 2.67em;
+  max-width: 21em;
+  &::after {
+    content: '';
+    display: block;
+    @include absolute(top 50% left 0);
+    margin-top: -0.1em;
+    @include size(1.8em, 0.6em);
+    background: $color--heading;
+  }
+  &::before {
+    content: '';
+    display: block;
+    @include absolute(top 50% left 3.5em);
+    @include circle(10em);
+    box-sizing: border-box;
+    border: 10px solid white;
+    z-index: 0;
+    transform: translateY(-50%);
+  }
+  &[class*="bigger"] {
+    padding-left: 2.5em;
+    &::before {
+      @include circle(9.5em);
+    }
+  }
+  &--architekt::before {
+    right: -1em;
+    left: auto;
+  }
+  &--architekt[class*="bigger"]::before {
+    right: 0.5em;
+  }
+  &--art::before {
+    left: 6em;
+  }
+  &--art[class*="bigger"]::before {
+    @include circle(8.5em);
+    left: 7.5em;
+  }
+  &--philosophy::before {
+    left: 6em;
+  }
+  &--philosophy[class*="bigger"] {
+    padding-left: 2em;
+    &::before {
+      @include circle(8.5em);
+      left: 7.5em;
+    }
+    &::after {
+      @include size(1.5em, 0.2em);
+    }
+  }
+  &--fashion::before {
+    left: 3.5em;
+  }
+  &--fashion[class*="bigger"] {
+    padding-left: 2em;
+    &::before {
+      @include circle(8.5em);
+      left: 4em;
+    }
+    &::after {
+      @include size(1.5em, 0.2em);
+    }
+  }
+  &--music::before {
+    left: 3.5em;
+  }
+}
+
+.tp-text {
+  @each $align in (left, right, center) {
+    &--#{$align} {
+      text-align: $align;
+    }
+  }
+}
+
+.text-block {
+  &--white {
+    background: white;
+  }
+  &--light {
+    background: #fefefe;
+  }
+  &--gray {
+    background: #e6e6e6;
+  }
+}

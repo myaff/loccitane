@@ -1,0 +1,56 @@
+$nav-color: black;
+$nav-color--hover: $nav-color;
+
+.nav {
+  position: relative;
+  margin: 0 0 10vh;
+  padding-top: 1rem;
+
+  &::after {
+    content: '';
+    display: block;
+    @include absolute(bottom -2rem left 50%);
+    @include size(3rem, 2px);
+    margin-left: -1.5rem;
+    box-sizing: border-box;
+    background: currentColor;
+  }
+
+  &__list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  &__item {
+    margin: 0;
+    padding: 0;
+  }
+  
+  &__link {
+    display: block;
+    font: 30px/1 $font--accent;
+    padding: 30px;
+    color: $nav-color;
+    
+    &.disabled {
+      opacity: 0.5;
+      cursor: default;
+      pointer-events: none;
+    }
+    
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+    }
+    
+    &:hover,
+    &:focus,
+    &:active {
+      color: $nav-color--hover;
+    }
+  }
+}
