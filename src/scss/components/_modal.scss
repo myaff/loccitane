@@ -18,6 +18,12 @@ $modal-height: 100vh;
   transform: translateY(50%) scaleY(0);
   transition: opacity 0.3s, transform 0.3s, z-index 0.1s 0.3s;
   
+  @media screen and (max-width: #{$modal-width + 3rem}) {
+    width: calc(100% - 3rem);
+    right: 1.5rem;
+    left: 1.5rem;
+  }
+  
   &__wrapper.is-fullscreen & {
     top: 0;
   }
@@ -46,6 +52,11 @@ $modal-height: 100vh;
     left: auto;
     height: auto;
     padding: 1rem;
+    
+    @media #{$xs-height} {
+      bottom: initial;
+      margin-bottom: 1.25rem;
+    }
   }
   
   &__wrapper {
@@ -54,6 +65,7 @@ $modal-height: 100vh;
     background: $modal-overlay-bg;
     z-index: -1 * $z-index--modal;
     padding-top: 1rem;
+    overflow-y: auto;
     opacity: 0;
     transition: opacity 0.3s, z-index 0.1s 0.3s;
     
@@ -119,6 +131,7 @@ $modal-height: 100vh;
     }
     .btn.btn--center {
       margin-top: 4vh;
+      min-width: 150px;
     }
     @media #{$sm-height} {
       .tp-body--main,
