@@ -4,9 +4,11 @@
  */
 
 let layout = $('.layout');
-let modalWrapper = $('.modal__wrapper');
+let modalWrapperClass = '.modal__wrapper';
+//let modalWrapper = $('.modal__wrapper');
  
 function openModal(modal, isFullscreen = false) {
+  let modalWrapper = modal.closest(modalWrapperClass);
   modalWrapper.removeClass('invisible');
   modal.removeClass('invisible');
   let wrapperClasses = 'is-opened';
@@ -20,6 +22,7 @@ function openModal(modal, isFullscreen = false) {
 }
 
 function closeModal(modal, openNext = false) {
+  let modalWrapper = modal.closest(modalWrapperClass);
   modal.removeClass('is-opened');
   if (!openNext) {
     layout.removeClass('modal-open');

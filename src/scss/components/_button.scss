@@ -34,6 +34,11 @@ $btn-dark-bg--hover: $btn-dark-bg;
   border: 1px solid $btn-border-color;
   transition: all .2s;
   
+  @media #{$md-landing} {
+    font-size: 2.175vw;
+    width: 16.35vw;
+  }
+  
   &:hover,
   &:focus,
   &:active {
@@ -43,6 +48,14 @@ $btn-dark-bg--hover: $btn-dark-bg;
     
     text-decoration: none;
     outline: none;
+  }
+  
+  &--big {
+    width: 18.75rem;
+    
+    @media #{$md-landing} {
+      width: 27.25vw;
+    }
   }
   
   &--dark {
@@ -59,9 +72,9 @@ $btn-dark-bg--hover: $btn-dark-bg;
     }
   }
   
-  &--wide {
-    text-transform: uppercase;
-    letter-spacing: 4px;
+  &--primary-dark {
+    color: #000000;
+    font-weight: 600;
   }
   
   &--fullwidth {
@@ -71,6 +84,12 @@ $btn-dark-bg--hover: $btn-dark-bg;
       margin-top: 1rem;
       margin-bottom: 2rem;
     }
+  }
+  
+  &--center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

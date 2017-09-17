@@ -3,13 +3,47 @@ $mainPage = false;
 if(strpos($_SERVER['REQUEST_URI'], '/index.php') || preg_match('/loccitane\/$/', $_SERVER['REQUEST_URI'])){
 	$mainPage = true;
 }
+$pathArr = explode('/', $_SERVER['REQUEST_URI']);
+$currentPage = end($pathArr);
+$womans = [
+  'eg' => [
+    'name' => 'Екатерина Гусева',
+    'url' => 'guseva.php',
+    'img' => 'build/img/girls/guseva.jpg',
+    'active' => false
+  ],
+  'os' => [
+    'name' => 'Олеся Судзиловская',
+    'url' => 'sudzilovskaya.php',
+    'img' => 'build/img/girls/sudzilovskaya.jpg',
+    'active' => false
+  ],
+  'rk' => [
+    'name' => 'Равшана Куркова',
+    'url' => 'kurkova.php',
+    'img' => 'build/img/girls/kurkova.jpg',
+    'active' => true
+  ],
+  'tl' => [
+    'name' => 'Татьяна Лютаева',
+    'url' => 'liutaeva.php',
+    'img' => 'build/img/girls/liutaeva.jpg',
+    'active' => true
+  ],
+  'ep' => [
+    'name' => 'Елена Подкаминская',
+    'url' => 'podkaminskaya.php',
+    'img' => 'build/img/girls/podkaminskaya.jpg',
+    'active' => true
+  ]
+];
 ?>
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="./build/css/main.css" rel="stylesheet">
   <script src="./build/js/vendor/jquery-3.1.1.slim.min.js"></script>
   <script src="./build/img/svg/sprite.js"></script>

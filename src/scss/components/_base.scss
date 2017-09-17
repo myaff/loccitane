@@ -14,13 +14,11 @@ html, body {
   font: #{$font-size--base} / #{$line-height--base} $font--base;
   color: $color--base;
   background: $body-bg;
-  min-width: 64rem;
+  min-width: 59rem;
 }
 
 body {
-  @media #{$media-lg} {
-    overflow-x: hidden;
-  }
+  overflow-x: hidden;
 }
 
 .layout {
@@ -37,41 +35,15 @@ body {
 
 .page {
   overflow: hidden;
-  min-width: 64rem;
+  //min-width: 64rem;
+  //min-width: 59rem;
   min-height: calc(100vh - 12.88rem);
-  
-  .layout--home & {
-    height: calc(100vh - 12.88rem);
-    
-    .container {
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: space-around;
-      align-items: center;
-      align-content: center;
-      height: 100%;
-    }
-  }
-  
-  &__heading {
-    .layout--home & {
-      //margin: 4.5vh auto;
-      
-      &.tp-heading--huge {
-        font-size: 6.5vh;
-      }
-    }
-  }
   
   &__heading-text {
     max-width: 34.5em;
-    //margin: 3rem auto;
-    .layout--home & {
-      //margin: 4.5vh auto;
-      
-      &.tp-body--main {
-        font-size: 2.22vh;
-      }
+    
+    @media #{$sm-height} {
+      max-width: 38.5rem;
     }
   }
 }
@@ -79,8 +51,12 @@ body {
 .container {
   @include center-block;
   width: 100%;
-  max-width: 64rem;
+  max-width: 71.75rem;
   padding: 0 1.5rem;
+  
+  @media #{$md-landing} {
+    padding: 0 2.2vw;
+  }
 }
 
 .section {

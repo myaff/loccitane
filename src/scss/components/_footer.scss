@@ -1,6 +1,10 @@
 .footer {
   padding: 3.125rem;
   
+  @media #{$sm-height} {
+    padding: 2.125rem;
+  }
+  
   &__content {
     display: flex;
     align-items: center;
@@ -9,5 +13,12 @@
   
   &__logo .logo {
     @include size(11.25rem, 2.25rem);
+    
+    @media #{$sm-height} {
+      width: 7.25rem;
+    }
+    @media #{$gl-md} {
+      @include size(16.36vw, 3.27vw);
+    }
   }
 }

@@ -36,6 +36,10 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-left: 0.25rem;
+    
+    @media #{$gl-sm} {
+      display: none;
+    }
   }
   
   &__text,

@@ -13,6 +13,13 @@
   
   &__logo .logo {
     @include size(10rem, 1.875rem);
+    
+    @media #{$sm-height} {
+      @include size(8rem, 1.5rem);
+    }
+    @media #{$gl-md} {
+      @include size(14.55vw, 2.73vw);
+    }
   }
 
 }

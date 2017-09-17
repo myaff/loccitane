@@ -9,7 +9,7 @@ let parallaxBlocks = $('.a-parallax-box');
 function addClassTogglerScene (el, controller) {
   new ScrollMagic.Scene({
     triggerElement: el,
-    triggerHook: 0.5
+    triggerHook: 0.7
   })
   .setClassToggle(el, 'animate')
   .addTo(controller);

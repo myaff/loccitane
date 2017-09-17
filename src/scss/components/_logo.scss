@@ -17,14 +17,20 @@
     font-size: $font-size--base;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-  }
     
+    @media #{$gl-md} {
+      font-size: 1.45vw;
+    }
+  }
+  
   &__delimiter {
-    content: '';
-    display: block;
     @include size(7.5rem, 1px);
     background: currentColor;
     margin: 0 1rem;
+    
+    @media #{$gl-md} {
+      width: 10.91vw;
+    }
   }
   
 }

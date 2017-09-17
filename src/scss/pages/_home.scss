@@ -1,0 +1,55 @@
+.page {
+  .layout--home & {
+    height: calc(100vh - 12.88rem);
+    
+    @media #{$sm-height} {
+      height: calc(100vh - 10.5rem);
+    }
+    
+    @media #{$xs-height} {
+      min-height: calc(100vh - 10.5rem);
+      height: auto;
+    }
+    
+    .container {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+      height: 100%;
+    }
+  }
+  
+  .layout--home &__heading {
+    //margin: 4.5vh auto;
+    
+    @media #{$xs-height} {
+      margin: 1.5rem auto 0;
+    }
+    
+    &.tp-heading--huge {
+      font-size: 6.5vh;
+      
+      @media #{$xs-height} {
+        font-size: 3rem;
+      }
+    }
+  }
+  
+  .layout--home &__heading-text {
+    //margin: 4.5vh auto;
+    
+    @media #{$xs-height} {
+      margin: 3rem auto;
+    }
+    
+    &.tp-body--main {
+      font-size: 2.22vh;
+      
+      @media #{$xs-height} {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

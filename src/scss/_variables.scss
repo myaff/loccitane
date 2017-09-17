@@ -21,7 +21,7 @@ $color--base: #000000;
 $color--heading: #000000;
 $color--primary: #f0b500;
 
-$body-bg: linear-gradient(to bottom, #e6ebef 0%, #f1f2f7 60%, #f6f7f9 100%);
+$body-bg: linear-gradient(to top, #e6ebef 0%, #f1f2f7 60%, #f6f7f9 100%);
 $header-bg: transparent;
 $header-color: #000000;
 $btn-bg: transparent;
@@ -47,8 +47,8 @@ $spacer-x: $spacer !default;
 $spacer-y: $spacer !default;
 $spacers: (
   0: (
-    x: 0,
-    y: 0
+    x: ($spacer-x * 0),
+    y: ($spacer-y * 0)
   ),
   1: (
     x: ($spacer-x * .25),
@@ -96,3 +96,8 @@ $grid-breakpoints: (
   lg: 64rem,
   xl: 80rem
 ) !default;
+
+$sm-height: 'screen and (max-height: 799px)';
+$xs-height: 'screen and (max-height: 599px)';
+$min-animation: 'screen and (min-width: 64rem)';
+$md-landing: 'screen and (max-width: 68.75rem)';

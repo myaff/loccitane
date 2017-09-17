@@ -41,6 +41,10 @@ $dot-bg: #000000;
   display: flex;
   justify-content: space-between;
   margin-left: -16.25rem;
+  
+  @media #{$xs-height} {
+    top: 6.5rem;
+  }
 }
 .owl-prev,
 .owl-next {
@@ -49,6 +53,10 @@ $dot-bg: #000000;
   background-position: center;
   background-size: contain;
   transition: opacity 0.2s;
+  
+  @media #{$sm-height} {
+    @include size(2rem);
+  }
   
   &.disabled {
     opacity: 0.15;
@@ -65,5 +73,9 @@ $dot-bg: #000000;
   &--girls {
     max-width: 35rem;
     //margin: 5.9vh auto;
+    
+    @media #{$xs-height} {
+      margin: 0 auto 2rem;
+    }
   }
 }

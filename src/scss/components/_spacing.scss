@@ -41,3 +41,26 @@
     }
   }
 }
+
+@media #{$md-landing} {
+  .layout--landing {
+    @each $size, $lengths in $spacers {
+      $length-x: (map-get($lengths, x) / 1rem) * 16 / 1100 * 100vw;
+      $length-y: (map-get($lengths, y) / 1rem) * 16 / 1100 * 100vw;
+      .m-#{$size}  {margin:        $length-y $length-x !important; }
+      .mt-#{$size} {margin-top:    $length-y !important; }
+      .mr-#{$size} {margin-right:  $length-x !important; }
+      .mb-#{$size} {margin-bottom: $length-y !important; }
+      .ml-#{$size} {margin-left:   $length-x !important; }
+      .mx-#{$size} {
+        margin-right: $length-x !important;
+        margin-left:  $length-x !important;
+      }
+      .my-#{$size} {
+        margin-top:    $length-y !important;
+        margin-bottom: $length-y !important;
+      }
+      
+    }
+  }
+}

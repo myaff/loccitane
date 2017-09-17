@@ -8,6 +8,13 @@
   background: $btn-bg;
   display: block;
   
+  @media #{$sm-height} {
+    @include size(2.5rem, 1.5rem);
+  }
+  @media #{$gl-md} {
+    @include size(4.55vw, 2.73vw);
+  }
+  
   &:hover,
   &:focus,
   &:active {

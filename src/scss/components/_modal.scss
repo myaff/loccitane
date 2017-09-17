@@ -1,6 +1,9 @@
 $modal-overlay-bg: $body-bg;
 $modal-bg: transparent;
 
+$modal-overlay-bg--aside: url(../img/popup-bg.jpg) left center no-repeat, linear-gradient(to bottom, #de7701 0%, #e78500 45%, #e99500 61%, #f9ab00 78%, #e88601 95%, #e88601 100%);
+$modal-bg--aside: #e9edf2;
+
 $modal-width: 45rem;
 $modal-height: 100vh;
 
@@ -35,6 +38,16 @@ $modal-height: 100vh;
     overflow-y: auto;
   }
   
+  &--aside {
+    background: $modal-bg--aside;
+    top: 1.25rem;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    left: auto;
+    height: auto;
+    padding: 1rem;
+  }
+  
   &__wrapper {
     @include fixed(top 0 left 0);
     @include size(100%);
@@ -43,6 +56,7 @@ $modal-height: 100vh;
     padding-top: 1rem;
     opacity: 0;
     transition: opacity 0.3s, z-index 0.1s 0.3s;
+    
     
     &.is-opened {
       opacity: 1;
@@ -55,6 +69,15 @@ $modal-height: 100vh;
       padding-top: 1rem;
       overflow-y: auto;
     }
+    &--aside {
+      background: $modal-overlay-bg--aside;
+      background-size: contain;
+      padding: 1.25rem;
+      &,
+      &.is-opened {
+        z-index: $z-index--modal + $z-index--header;
+      }
+    }
   }
   
   .btn-close {
@@ -66,9 +89,51 @@ $modal-height: 100vh;
     height: 100%;
     background: transparent;
   }
-  &--big &__content {
-    background: url('../img/popup-bg.jpg') center no-repeat;
-    background-size: cover;
-    overflow-y: auto;
+  &--aside &__content {
+    border: 3px solid $color--primary;
+    padding: 1.25rem 1.5rem 2.5rem;
+  }
+  
+  &__subheading {
+    text-decoration: underline;
+    margin-bottom: 1vh;
+  }
+  
+  &__heading {
+    margin-bottom: 4vh;
+    
+    @media #{$sm-height} {
+      margin-bottom: 2vh;
+      font-size: 7vh;
+    }
+    @media #{$xs-height} {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  &__text {
+    @include null-childs-margin();
+    p {
+      margin: 2vh 0;
+    }
+    .btn.btn--center {
+      margin-top: 4vh;
+    }
+    @media #{$sm-height} {
+      .tp-body--main,
+      .btn.btn--primary-dark {
+        font-size: 3vh;
+      }
+    }
+    @media #{$xs-height} {
+      p {
+        margin: 1rem 0;
+      }
+      .tp-body--main,
+      .btn.btn--primary-dark {
+        font-size: 1rem;
+      }
+    }
   }
 }
