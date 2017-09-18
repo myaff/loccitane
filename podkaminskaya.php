@@ -6,12 +6,12 @@
         <div class="girl__first-name">Елена</div>
         <div class="girl__last-name">Подкаминская</div>
       </div>
-      <div class="ep-2">
+      <div class="ep-2 pt-3 pb-8">
         <div class="img-wrapper a-parallax-box">
           <img class="l-block--right a-parallax-middle" src="build/img/podkaminskaya/podkaminskaya-1.jpg" alt="Елена Подкаминская"/>
         </div>
-        <div class="text-block mt-3 a-scroll-box">
-          <div class="tp-body--main a-fade-slide a-delay-1">
+        <div class="text-block a-scroll-box pb-8">
+          <div class="tp-body--main a-fade-slide a-delay-1 pb-7 mb-2">
             <p><b>Когда есть немного времени,</b><br/>
               для меня счастье сходить к косметологу на процедуру jet peel и сделать увлажняющую маску. А если еще и выспаться перед этим - это вообще невероятная роскошь. И, конечно, очень важна команда, с который мы понимаем друг друга с полуслова - мне необходимо быть на одной волне со стилистом и визажистом, тогда и результат не разочаровывает, и ощущение праздника наступает еще до первого шага по красной дорожке. </p>
           </div>

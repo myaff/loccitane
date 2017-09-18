@@ -8,13 +8,16 @@
       }
     }
     .text-block {
-      @include absolute(top 0 left 43rem);
+      margin-left: 43rem;
       max-width: 23.75rem;
       
       @media #{$md-landing} {
-        left: 62.55vw;
+        margin-left: 62.55vw;
         max-width: 34.55vw;
       }
+    }
+    .img-wrapper {
+      @include absolute(top 0 left 0);
     }
   }
   &-3 {
