@@ -1,4 +1,4 @@
-<div class="all-girls mb-3 pt-6 pb-3">
+<div class="all-girls mb-3 pt-5 pb-3">
   <?php foreach ($womans as $woman) { ?>
     <?php if ($currentPage !== $woman['url']) { ?>
       <div class="all-girls__item girl girl--small">
