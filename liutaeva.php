@@ -8,10 +8,10 @@
           <div class="girl__last-name">Лютаева</div>
         </div>
         <div class="img-wrapper a-parallax-box">
-          <img class="l-block--right mr-6 a-parallax-middle" src="build/img/liutaeva/liutaeva-1.jpg" alt="Татьяна Лютаева" data-parallax-from="-7" data-parallax-to="2"/>
+          <img class="l-block--right a-parallax-middle" src="build/img/liutaeva/liutaeva-1.jpg" alt="Татьяна Лютаева" data-parallax-from="-8" data-parallax-to="8"/>
         </div>
       </div>
-      <div class="l-block--right tl-2 ml-3 mt-2 a-scroll-box">
+      <div class="l-block--right tl-2 ml-3 mt-2 mb-8 a-scroll-box">
         <div class="text-block ml-8 a-fade-slide a-ordered">
           <div class="tp-body--main">
             <p><b>У меня сухая кожа</b><br/>
@@ -29,7 +29,7 @@
         <blockquote class="a-fade-slide">Как ты живешь, о чем думаешь, какие поступки совершаешь – вот, что имеет значение для нашей внешности, а не цифры в паспорте</blockquote>
       </div>
       <div class="l-block--right img-wrapper tl-4 a-parallax-box">
-        <img class="l-block--left a-parallax-middle" src="build/img/liutaeva/liutaeva-2.jpg" alt="Татьяна Лютаева" data-parallax-from="-6" data-parallax-to="5"/>
+        <img class="l-block--left a-parallax-middle" src="build/img/liutaeva/liutaeva-2.jpg" alt="Татьяна Лютаева" data-parallax-from="-5" data-parallax-to="5"/>
       </div>
       <div class="l-block--left tl-5 ml-8">
         <div class="text-block a-scroll-box">
@@ -46,7 +46,7 @@
         <img class="l-block--right a-parallax-front" src="build/img/liutaeva/liutaeva-3.jpg" alt="Татьяна Лютаева" data-parallax-from="-5" data-parallax-to="25"/>
       </div>
       <div class="l-block--right mr-5 tl-8 a-scroll-box">
-        <img class="a-fade-slide" src="build/img/liutaeva/liutaeva-5.png" alt="Татьяна Лютаева"/>
+        <img class="a-fade-slide" src="build/img/liutaeva/liutaeva-prod.png" alt="Татьяна Лютаева"/>
         <div class="text-block ml-4 a-scroll-box">
           <div class="tp-heading--medium my-2 a-fade-slide a-ordered">Божественное масло <br/>Иммортель</div>
           <div class="tp-body--main a-fade-slide a-ordered">

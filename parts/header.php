@@ -9,31 +9,36 @@ $womans = [
   'eg' => [
     'name' => 'Екатерина Гусева',
     'url' => 'guseva.php',
-    'img' => 'build/img/girls/guseva.jpg',
+    'img' => 'build/img/girls/guseva.png',
+    'imgAll' => 'build/img/girls/all-guseva.jpg',
     'active' => false
   ],
   'os' => [
     'name' => 'Олеся Судзиловская',
     'url' => 'sudzilovskaya.php',
-    'img' => 'build/img/girls/sudzilovskaya.jpg',
+    'img' => 'build/img/girls/sudzilovskaya.png',
+    'imgAll' => 'build/img/girls/all-sudzilovskaya.jpg',
     'active' => false
   ],
   'rk' => [
     'name' => 'Равшана Куркова',
     'url' => 'kurkova.php',
-    'img' => 'build/img/girls/kurkova.jpg',
+    'img' => 'build/img/girls/kurkova.png',
+    'imgAll' => 'build/img/girls/kurkova.jpg',
     'active' => true
   ],
   'tl' => [
     'name' => 'Татьяна Лютаева',
     'url' => 'liutaeva.php',
-    'img' => 'build/img/girls/liutaeva.jpg',
+    'img' => 'build/img/girls/liutaeva.png',
+    'imgAll' => 'build/img/girls/all-liutaeva.jpg',
     'active' => true
   ],
   'ep' => [
     'name' => 'Елена Подкаминская',
     'url' => 'podkaminskaya.php',
-    'img' => 'build/img/girls/podkaminskaya.jpg',
+    'img' => 'build/img/girls/podkaminskaya.png',
+    'imgAll' => 'build/img/girls/all-podkaminskaya.jpg',
     'active' => true
   ]
 ];

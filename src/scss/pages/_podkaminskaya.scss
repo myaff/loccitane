@@ -2,7 +2,7 @@
   &-1 {
     img {
       @media #{$md-landing} {
-        max-height: 60vw;
+        max-height: 56.36vw;
       }
     }
   }
@@ -43,7 +43,7 @@
       margin-top: 7.27vw;
       
       img {
-        max-height: 58.18vw;
+        max-height: 95.91vw;
       }
     }
   }
@@ -52,28 +52,13 @@
       margin-right: -2vw!important;
     }
     img {
+      margin-left: -2vw;
       @media #{$md-landing} {
-        max-height: 28.45vw;
+        max-height: 32vw;
       }
     }
   }
   &-8 {
-    margin-top: -170px;
-    margin-left: 100px;
-    margin-right: -100px;
-    z-index: 0;
-    
-    @media #{$md-landing} {
-      margin-top: -15.45vw;
-      margin-left: 9.1vw;
-      margin-right: -9.1vw;
-      
-      img {
-        max-height: 70.91vw;
-      }
-    }
-  }
-  &-9 {
     margin-bottom: 5rem;
     
     @media #{$md-landing} {

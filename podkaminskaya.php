@@ -17,7 +17,7 @@
       </div>
       <div class="l-block--right ep-3">
         <div class="img-wrapper a-parallax-box">
-          <img class="l-block--left a-parallax-middle" src="build/img/podkaminskaya/podkaminskaya-2.jpg" alt="Елена Подкаминская" data-parallax-from="-5" data-parallax-to="10"/>
+          <img class="l-block--left a-parallax-middle" src="build/img/podkaminskaya/podkaminskaya-2.jpg" alt="Елена Подкаминская" data-parallax-from="0" data-parallax-to="10"/>
         </div>
         <div class="a-scroll-box">
           <blockquote class="mt-8 a-fade-slide a-delay-2">Обожаю хорошую баню. Нет ничего лучше старой доброй парной - для тела и духа, каждый раз будто рождаешься заново</blockquote>
@@ -33,28 +33,25 @@
         <button class="btn btn--big btn--dark js-modal mt-5 a-fade-slide a-ordered" data-target="#competition">конкурс</button>
       </div>
       <div class="l-block--left img-wrapper ep-5 a-parallax-box">
-        <img class="l-block--right a-parallax-front" src="build/img/podkaminskaya/podkaminskaya-3.jpg" alt="Елена Подкаминская" data-parallax-from="-5" data-parallax-to="35"/>
+        <img class="l-block--right a-parallax-front" src="build/img/podkaminskaya/podkaminskaya-3.jpg" alt="Елена Подкаминская" data-parallax-from="-5" data-parallax-to="2"/>
       </div>
-      <div class="text-block l-block--left ep-6 ml-4 a-scroll-box">
+      <div class="text-block l-block--left ep-6 ml-8 a-scroll-box">
         <div class="tp-body--main a-fade-slide">
           <p><b>Что помогло мне принять и полюбить себя?</b> Мне кажется, все идет из детства. Если ты любим в семье, если твои проблемы решают и участвуют в твоей жизни, ты окружен заботой, теплом и вниманием - тогда и зарождается любовь к себе. Я всегда знала, что за мной стоят мои близкие.</p>
         </div>
       </div>
-      <div class="l-block--right ep-7 mt-4 mr-3 a-scroll-box">
-        <img class="a-fade-slide a-ordered" src="build/img/podkaminskaya/podkaminskaya-5.png" alt="Елена Подкаминская"/>
+      <div class="l-block--left ep-7 mt-4 mb-8 ml-8 a-scroll-box">
+        <img class="a-fade-slide a-ordered" src="build/img/podkaminskaya/podkaminskaya-prod.png" alt="Елена Подкаминская"/>
         <div class="text-block ml-4 a-scroll-box">
-          <div class="tp-heading--medium mt-3 mb-1 a-fade-slide a-ordered">Божественный бальзам <br/>для кожи вокруг глаз</div>
+          <div class="tp-heading--medium mb-3 a-fade-slide a-ordered">Божественный бальзам <br/>для кожи вокруг глаз</div>
           <div class="tp-body--main a-fade-slide a-ordered">
             <p>Бальзам прекрасно разглаживает морщинки и повышает упругость кожи вокруг глаз, снимает отечность и раздражение. В его состав входят воск гречихи и экстракт ясеня, которые помогают избавиться от темных кругов под глазами. А цветочная вода розы успокаивает кожу и придает взгляду свежесть и сияние. Невероятно нежную текстуру средства особенно оценят женщины с сухой кожей.</p>
           </div>
           <button class="btn mt-5 a-fade-slide a-ordered">Купить</button>
         </div>
       </div>
-      <div class="l-block--left img-wrapper ep-8 mb-5 a-parallax-box">
-        <img class="l-block--right a-parallax-back" src="build/img/podkaminskaya/podkaminskaya-4.jpg" alt="Елена Подкаминская" data-parallax-from="-30"/>
-      </div>
-      <div class="l-block--center a-scroll-box">
-        <blockquote class="l-block--center mt-5 ep-9 a-fade-slide">Точное понимание того, что нахожусь в правильном месте, в правильной точке, придает мне уверенности и приближает к тому, что называют</blockquote>
+      <div class="l-block--center mt-8 ep-8 a-scroll-box">
+        <blockquote class="l-block--center a-fade-slide">Точное понимание того, что нахожусь в правильном месте, в правильной точке, придает мне уверенности и приближает к тому, что называют</blockquote>
         <button class="btn btn--big btn--dark btn--center js-modal mt-5 a-fade-slide a-delay-1" data-target="#competition">конкурс</button>
       </div>
     </div>

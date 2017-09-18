@@ -1,7 +1,7 @@
 <?php require('parts/header.php');?>
 <div class="page">
   <div class="container">
-    <div class="page__heading tp-heading--huge tp-text--center">Выбор женщины</div>
+    <div class="page__heading tp-heading--huge tp-text--center">Сила красоты</div>
     <div class="page__heading-text tp-body--main tp-text--center">
       <p>Умение относиться к себе с любовью и уважением, забота о своем теле – это&nbsp;важные слагаемые красоты. Как сохранить свою женственность на долгие годы? Пять очаровательных женщин делятся своими секретами</p>
     </div>

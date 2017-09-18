@@ -1,8 +1,10 @@
 .tl {
   &-1 {
     img {
+      margin-right: -4.5rem;
       @media #{$md-landing} {
-        max-height: 65.45vw;
+        max-height: 54vw;
+        margin-right: -6.55vw;
       }
     }
   }
@@ -31,7 +33,6 @@
   &-4 {
     margin-left: -120px;
     margin-right: 60px;
-    margin-top: -88px;
     z-index: 0;
     
     @media screen and (max-width: 1160px) {
@@ -41,7 +42,6 @@
     @media #{$md-landing} {
       margin-left: -12.9vw;
       margin-right: 5.45vw;
-      margin-top: -8vw;
       
       img {
         max-height: 40.91vw;
@@ -59,20 +59,26 @@
     
     img {
       @media #{$md-landing} {
-        max-height: 83.64vw;
+        max-height: 87.27vw;
       }
     }
   }
   &-8 {
     margin-right: -10px;
+    margin-top: 5rem;
     max-width: 380px;
+    
+    img {
+      margin-left: -4vw;
+    }
     
     @media #{$md-landing} {
       margin-right: -0.9vw;
       max-width: 34.55vw;
+      margin-top: 7.27vw;
       
       img {
-        max-height: 37.27vw;
+        max-height: 32vw;
       }
     }
   }
