@@ -12,7 +12,7 @@
             <div class="girl__first-name"><?=explode(' ', $woman['name'])[0];?></div>
             <div class="girl__last-name"><?=explode(' ', $woman['name'])[1];?></div>
           </div>
-          <div class="girl__photo"><img src="<?=$woman['img'];?>" alt="<?=$woman['name'];?>"/></div>
+          <div class="girl__photo"><img src="<?=$woman['img'];?>"/></div>
           <a href="<?=$woman['url'];?>" class="girl__link btn">Читать</a>
         </div>
       <?php } ?>

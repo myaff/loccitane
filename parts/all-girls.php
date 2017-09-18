@@ -3,7 +3,7 @@
     <?php if ($currentPage !== $woman['url']) { ?>
       <div class="all-girls__item girl girl--small">
         <a href="<?=$woman['url'];?>" class="girl__link<?php if (!$woman['active']) { ?> disabled<?php } ?>">
-          <div class="girl__photo"><img src="<?=$woman['img'];?>" alt="<?=$woman['name'];?>"></div>
+          <div class="girl__photo"><img src="<?=$woman['img'];?>"></div>
           <div class="girl__name">
             <div class="girl__first-name"><?=explode(' ', $woman['name'])[0];?></div>
             <div class="girl__last-name"><?=explode(' ', $woman['name'])[1];?></div>
