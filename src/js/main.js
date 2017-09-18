@@ -16,7 +16,7 @@ $(document).ready(function(){
   Anchor.init();
   Input.init();
   Select.init();
-  Animation.init();
+  //Animation.init();
   
 });
 

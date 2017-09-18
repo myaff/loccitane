@@ -77,9 +77,11 @@ function addParallaxController (animationBlocks) {
 
 function init () {
   if (scrollAnimationBlocks.length > 0 && $(window).width() > 1024){
+    $('html').addClass('is-animating');
     addClassTogglerController(scrollAnimationBlocks);
   }
   if (parallaxBlocks.length > 0 && $(window).width() > 1024){
+    $('html').addClass('is-animating');
     addParallaxController(parallaxBlocks);
   }
 }

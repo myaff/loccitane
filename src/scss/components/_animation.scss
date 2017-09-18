@@ -1,20 +1,24 @@
 @media #{$min-animation} {
   .a {
     &-fade {
-      opacity: 0;
-      transition: opacity 0.3s;
+      .is-animating & {
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
       
-      .animate > & {
+      .is-animating .animate > & {
         opacity: 1;
       }
     }
     
     &-fade-slide {
-      opacity: 0;
-      transform: translateY(2rem);
-      transition: transform 0.3s, opacity 0.3s;
+      .is-animating & {
+        opacity: 0;
+        transform: translateY(2rem);
+        transition: transform 0.3s, opacity 0.3s;
+      }
       
-      .animate > & {
+      .is-animating .animate > & {
         opacity: 1;
         transform: translateY(0);
       }
