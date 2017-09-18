@@ -53,8 +53,16 @@
   &--big &__last-name {
     font-size: 102px;
     
+    .page--ep & {
+      font-size: 90px;
+    }
+    
     @media #{$md-landing} {
       font-size: 9vw;
+      
+      .page--ep & {
+        font-size: 8.18vw;
+      }
     }
   }
   
