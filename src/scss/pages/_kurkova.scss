@@ -5,36 +5,29 @@
         max-height: 65.45vw;
       }
     }
-  }
-  &-2 {
-    margin-top: 60px;
-    margin-right: -3rem;
-    
-    @media #{$md-landing} {
-      margin-top: 5.45vw;
-      margin-bottom: 11vw;
-      margin-right: 0;
-      max-width: 43.9vw;
-    }
-    
-    .tp-heading--huge {
-      max-width: 32.5rem;
-      
+    .img-wrapper {
+      @include absolute(top 13rem left 0);
       @media #{$md-landing} {
-        max-width: 47.265vw;
+        top: 18.91vw;
+      }
+    }
+    .page__heading {
+      @include absolute(top 0 left 0);
+    }
+    .text-block-wrapper {
+      margin-left: 35.5rem;
+      @media #{$md-landing} {
+        margin-left: 51.64vw;
       }
     }
   }
-  &-3 {
-    margin-top: -115px;
-    margin-left: -60px;
-    margin-right: 60px;
-    z-index: 1;
-    
-    @media #{$md-landing} {
-      margin-top: -6.45vw;
-      margin-left: -5.45vw;
-      margin-right: 5.45vw;
+  &-2 {
+    .img-wrapper {
+      @include absolute(top -7rem left 30.5rem);
+      @media #{$md-landing} {
+        top: -10.18vw;
+        left: 44.36vw;
+      }
     }
     
     img {
@@ -43,51 +36,54 @@
       }
     }
   }
-  &-6 {
-    img {
-      @media #{$md-landing} {
-        max-height: 72vw;
-      }
-    }
-  }
-  &-7 {
-    margin-left: 55px;
-    max-width: 360px;
-    z-index: 1;
-    
-    @media #{$md-landing} {
-      max-width: 34.55vw;
-      margin-left: 5vw;
-    }
-  }
-  &-8 {
-    margin-right: -40px;
-    
-    @media #{$md-landing} {
-      margin-right: -3.64vw;
-    }
-    
-    .text-block {
-      max-width: 22.5rem;
+  &-4 {
+    .img-wrapper {
+      @include absolute(top 0 left 0);
       
       @media #{$md-landing} {
-        max-width: 32.725vw;
+        img {
+          max-height: 72vw;
+        }
       }
     }
-    
-    img {
+    .text-block-wrapper {
+      margin-left: 42rem;
       @media #{$md-landing} {
-        max-height: 26vw;
+        margin-left: 61vw;
+      }
+      
+      img {
+        margin-left: -1rem;
+        @media #{$md-landing} {
+          margin-left: -1.45vw;
+        }
+      }
+      
+      @media #{$md-landing} {
+        img {
+          max-height: 26vw;
+        }
       }
     }
-  }
-  &-9 {
-    max-width: 40rem;
-    margin-top: -535px;
-    
-    @media #{$md-landing} {
-      max-width: 58.175vw;
-      margin-top: -53vw;
+    .blockquote-wrapper {
+      @include absolute(bottom 2rem left 0);
+      width: 41.25rem;
+      @media #{$md-landing} {
+        bottom: 2.91vw;
+        width: 60vw;
+      }
+    }
+    .text-block {
+      width: 23.5rem;
+      @media #{$md-landing} {
+        width: 34.18vw;
+      }
+    }
+    img + .text-block {
+      width: 22.9rem;
+      @media #{$md-landing} {
+        width: 33.31vw;
+      }
     }
   }
 }
