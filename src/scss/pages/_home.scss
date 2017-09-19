@@ -1,5 +1,5 @@
 .page {
-  .layout--home & {
+  &--home {
     height: calc(100vh - 12.88rem);
     
     @media #{$sm-height} {
@@ -21,7 +21,7 @@
     }
   }
   
-  .layout--home &__heading {
+  &--home &__heading {
     //margin: 4.5vh auto;
     
     @media #{$xs-height} {
@@ -37,7 +37,7 @@
     }
   }
   
-  .layout--home &__heading-text {
+  &--home &__heading-text {
     //margin: 4.5vh auto;
     
     @media #{$xs-height} {
@@ -52,4 +52,19 @@
       }
     }
   }
+  
+  &--mhome &__heading {
+    
+    &.tp-heading--huge {
+      font-size: 18.75vw;
+    }
+  }
+  
+  &--mhome &__heading-text {
+    
+    &.tp-body--main {
+      font-size: 7.5vw;
+    }
+  }
+  
 }

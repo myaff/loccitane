@@ -14,7 +14,9 @@ html, body {
   font: #{$font-size--base} / #{$line-height--base} $font--base;
   color: $color--base;
   background: $body-bg;
-  //min-width: 59rem;
+  @media #{$xs} {
+    background: $body-bg--mobile;
+  }
 }
 
 body {
@@ -56,6 +58,9 @@ body {
   
   @media #{$md-landing} {
     padding: 0 2.2vw;
+  }
+  @media #{$xs} {
+    padding: 3.13vw;
   }
 }
 

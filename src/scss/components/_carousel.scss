@@ -45,10 +45,16 @@ $dot-bg: #000000;
   @media #{$xs-height} {
     top: 6.5rem;
   }
+  @media #{$xs} {
+    top: 75vw;
+    width: 96.88vw;
+    height: 12.5vw;
+    margin-left: -48.44vw;
+  }
 }
 .owl-prev,
 .owl-next {
-  @include size(2.5rem);
+  @include circle(2.5rem, 50%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -56,6 +62,21 @@ $dot-bg: #000000;
   
   @media #{$sm-height} {
     @include size(2rem);
+  }
+  @media #{$xs} {
+    @include size(12.5vw);
+    &::before {
+      content: '';
+      display: block;
+      @include circle(10.5vw);
+      background: $body-bg--mobile;
+      @include absolute(top 1vw left 1vw);
+    }
+    &::after {
+      content: '';
+      @include circle(100%);
+      @include absolute(top 0 left 0);
+    }
   }
   
   &.disabled {
@@ -65,7 +86,9 @@ $dot-bg: #000000;
 }
 @each $dir in (prev, next) {
   .owl-#{$dir} {
-    background-image: url('../img/arrow-#{$dir}.svg');
+    &, &::after {
+      background-image: url('../img/arrow-#{$dir}.svg');
+    }
   }
 }
 

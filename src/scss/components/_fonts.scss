@@ -10,7 +10,7 @@ $fonts-path: '../assets/fonts/';
 
 @each $name, $file, $weight, $style in $inc-fonts {
   @font-face {
-    font-family: $name;
+    font-family: unquote($name);
     @include font_paths($file);
     font-weight: $weight;
     font-style: $style;

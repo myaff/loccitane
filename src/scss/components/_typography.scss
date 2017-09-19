@@ -15,6 +15,9 @@ p {
     @media #{$md-landing} {
       font-size: 6.36vw;
     }
+    @media #{$xs} {
+      font-size: 13.5vw;
+    }
   }
   &--large {
     @include heading {
@@ -39,8 +42,17 @@ p {
   &--medium {
     @include heading {
       font-size: $font-size--medium;
-      letter-spacing: 2px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
+      
+      @media #{$md-landing} {
+        font-size: 1.55vw;
+      }
+      
+      @media #{$xs} {
+        font-size: 5.31vw;
+      }
     }
   }
 }
@@ -66,6 +78,10 @@ p {
     
     @media #{$md-landing} {
       font-size: 2.175vw;
+    }
+    
+    @media #{$xs} {
+      font-size: 7.5vw;
     }
   }
   &--small {
@@ -102,11 +118,23 @@ p {
     width: 47.73vw;
   }
   
+  
   &--big {
     width: 38.75rem;
     
     @media #{$md-landing} {
       width: 53.88vw;
+    }
+  }
+  &, &--big {
+    @media #{$xs} {
+      width: 100vw;
+      margin-left: calc(-1 * (100vw - 100%) / 2);
+      margin-right: calc(-1 * (100vw - 100%) / 2);
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
   
@@ -122,6 +150,10 @@ b, strong {
 }
 .highlight {
   font: bold #{$font-size--bigger}/1 $font--accent;
+  @media #{$xs} {
+    font-size: 8.13vw;
+    line-height: 1.2;
+  }
 }
 
 blockquote {
@@ -133,6 +165,10 @@ blockquote {
   @media #{$md-landing} {
     max-width: 52.15vw;
     font-size: 2.725vw;
+  }
+  @media #{$xs} {
+    max-width: 100%;
+    font-size: 9.38vw;
   }
   
   &::before,
@@ -154,5 +190,8 @@ blockquote {
   
   @media #{$md-landing} {
     max-width: 33vw;
+  }
+  @media #{$xs} {
+    max-width: 100%;
   }
 }

@@ -22,6 +22,12 @@ $modal-height: 100vh;
     width: calc(100% - 3rem);
     right: 1.5rem;
     left: 1.5rem;
+    margin: 0;
+  }
+  @media #{$xs} {
+    width: calc(100% - 6.26vw);
+    left: 3.13vw;
+    right: 3.13vw;
   }
   
   &__wrapper.is-fullscreen & {
@@ -57,6 +63,14 @@ $modal-height: 100vh;
       bottom: initial;
       margin-bottom: 1.25rem;
     }
+    @media #{$xs} {
+      left: 3.13vw;
+      right: 3.13vw;
+      top: 3.13vw;
+      bottom: initial;
+      margin-bottom: 3.13vw;
+      padding: 3.13vw;
+    }
   }
   
   &__wrapper {
@@ -69,6 +83,9 @@ $modal-height: 100vh;
     opacity: 0;
     transition: opacity 0.3s, z-index 0.1s 0.3s;
     
+    @media #{$xs} {
+      padding-top: 0;
+    }
     
     &.is-opened {
       opacity: 1;
@@ -89,12 +106,19 @@ $modal-height: 100vh;
       &.is-opened {
         z-index: $z-index--modal + $z-index--header;
       }
+      @media #{$xs} {
+        background-size: cover;
+      }
     }
   }
   
   .btn-close {
     @include absolute(top 2.5rem right 0);
     z-index: $z-index--modal + 1;
+    
+    @media #{$xs} {
+      top: 3.13vw;
+    }
   }
   
   &__content {
@@ -104,11 +128,19 @@ $modal-height: 100vh;
   &--aside &__content {
     border: 3px solid $color--primary;
     padding: 1.25rem 1.5rem 2.5rem;
+    
+    @media #{$xs} {
+      padding: 3.13vw 3.13vw 7.5vw;
+    }
   }
   
   &__subheading {
     text-decoration: underline;
     margin-bottom: 1vh;
+    
+    @media #{$xs} {
+      margin-bottom: 5vw;
+    }
   }
   
   &__heading {
@@ -121,6 +153,10 @@ $modal-height: 100vh;
     @media #{$xs-height} {
       font-size: 3rem;
       margin-bottom: 1.5rem;
+    }
+    @media #{$xs} {
+      font-size: 15vw;
+      margin-bottom: 7.5vw;
     }
   }
   
@@ -147,6 +183,19 @@ $modal-height: 100vh;
       .btn.btn--primary-dark {
         font-size: 1rem;
       }
+    }
+    @media #{$xs} {
+      p {
+        margin: 1em 0;
+      }
+      .tp-body--main,
+      .btn.btn--primary-dark {
+        font-size: 5vw;
+      }
+      .btn.btn--center {
+        margin-top: 7.5vw;
+      }
+      
     }
   }
 }

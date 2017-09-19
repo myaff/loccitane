@@ -1,6 +1,6 @@
 <?php 
 $mainPage = false;
-if(strpos($_SERVER['REQUEST_URI'], '/index.php') || preg_match('/loccitane\/$/', $_SERVER['REQUEST_URI'])){
+if(strpos($_SERVER['REQUEST_URI'], '/index.php') || preg_match('/loccitane\/mobile\/$/', $_SERVER['REQUEST_URI'])){
 	$mainPage = true;
 }
 $pathArr = explode('/', $_SERVER['REQUEST_URI']);
@@ -51,14 +51,13 @@ $womans = [
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="<?=$root;?>build/css/main.css" rel="stylesheet">
   <script src="<?=$root;?>build/js/vendor/jquery-3.1.1.slim.min.js"></script>
-  <script src="<?=$root;?>build/js/vendor/mobile.js"></script>
   <script src="<?=$root;?>build/img/svg/sprite.js"></script>
   <title>Loccitane</title>
 </head>
 <body>
 <div class="svg-placeholder hidden"></div>
 <script>$('.svg-placeholder').html(SVG_SPRITE);</script>
-<div class="layout <?php if($mainPage){?>layout--home<?php } else {?>layout--landing<?php } ?>">
+<div class="layout <?php if($mainPage){?>layout--mhome<?php } else {?>layout--landing<?php } ?>">
 <div class="header">
 	<div class="header__content">
 	  <div class="btn-menu__wrapper">

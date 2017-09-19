@@ -25,15 +25,24 @@
     @media #{$xs-height} {
       font-size: 2rem;
     }
+    @media #{$xs} {
+      font-size: 14vw;
+    }
   }
   &--small &__first-name {
     font-size: $font-size--large;
+    @media #{$xs} {
+      font-size: 9.38vw;
+    }
   }
   &--big &__first-name {
     font-size: 77px;
     
     @media #{$md-landing} {
       font-size: 7vw;
+    }
+    @media #{$xs} {
+      font-size: 14vw;
     }
   }
   &__last-name {
@@ -46,9 +55,20 @@
     @media #{$xs-height} {
       font-size: 2.5rem;
     }
+    @media #{$xs} {
+      font-size: 17vw;
+      
+      .girl--ep &,
+      .girl--os & {
+        font-size: 9.5vw;
+      }
+    }
   }
   &--small &__last-name {
     font-size: 1.25rem;
+    @media #{$xs} {
+      font-size: 6.25vw;
+    }
   }
   &--big &__last-name {
     font-size: 102px;
@@ -64,6 +84,13 @@
         font-size: 8.18vw;
       }
     }
+    @media #{$xs} {
+      font-size: 17vw;
+      
+      .page--ep & {
+        font-size: 9.5vw;
+      }
+    }
   }
   
   &__photo {
@@ -75,6 +102,9 @@
     @media #{$xs-height} {
       @include size(12.5rem);
     }
+    @media #{$xs} {
+      @include size(93.75vw);
+    }
     
     img {
       display: block;
@@ -84,6 +114,11 @@
   &--small &__photo {
     @include size(6.25rem);
     margin: 0 auto 1rem;
+    
+    @media #{$xs} {
+      @include size(31.25vw);
+      margin-bottom: 5vw;
+    }
   }
   
   &__link.btn {
@@ -95,6 +130,11 @@
       font-size: 0.8rem;
       padding: 0.5rem 1.5rem;
       width: 7.25rem;
+    }
+    @media #{$xs} {
+      font-size: 7.5vw;
+      width: 56.25vw;
+      margin-top: -12.5vw;
     }
     
     &.disabled,
@@ -125,7 +165,7 @@
   }
 }
 
-.all-girls {
+.layout .all-girls {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,16 +173,25 @@
   border-width: 1px 0;
   margin-top: 5rem;
   
-  @media #{$gl-sm} {
+  @media #{$sm} {
     flex-wrap: wrap;
+  }
+  @media #{$xs} {
+    margin-top: 20vw;
+    padding-top: 20vw!important;
+    padding-bottom: 3.13vw!important;
   }
   
   &__item {
     flex: 0 1 200px;
     margin: 0 1.5rem 2rem;
     
-    @media #{$gl-sm} {
+    @media #{$sm} {
       flex: 0 1 34%;
+    }
+    @media #{$xs} {
+      flex: 0 1 100%;
+      margin: 0 0 20vw;
     }
   }
 }

@@ -2,7 +2,7 @@
 
   display: block;
   
-  &__wrapper {
+  .header__logo &__wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -18,8 +18,14 @@
     text-transform: uppercase;
     letter-spacing: 0.15em;
     
-    @media #{$gl-md} {
+    @media #{$md} {
       font-size: 1.45vw;
+    }
+    @media #{$xs} {
+      font-size: 5vw;
+      width: 93.74vw;
+      @include absolute(bottom -21.88vw right 0);
+      text-align: center;
     }
   }
   
@@ -28,8 +34,28 @@
     background: currentColor;
     margin: 0 1rem;
     
-    @media #{$gl-md} {
+    @media #{$md} {
       width: 10.91vw;
+    }
+    @media #{$xs} {
+      width: 37.5vw;
+      @include absolute(bottom -9.38vw right 28.12vw);
+      margin: 0;
+    }
+  }
+  
+  &--loccitane {
+    @include size(11.25rem, 2.25rem);
+    margin: 0 auto;
+    
+    @media #{$sm-height} {
+      width: 7.25rem;
+    }
+    @media #{$md} {
+      @include size(16.36vw, 3.27vw);
+    }
+    @media #{$xs} {
+      @include size(68.75vw, 14vw);
     }
   }
   

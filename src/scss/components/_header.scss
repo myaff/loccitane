@@ -5,21 +5,28 @@
   background: $header-bg;
   color: $header-color;
   
+  @media #{$xs} {
+    padding: 3.13vw 3.13vw 21.88vw;
+  }
+  
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-  &__logo .logo {
-    @include size(10rem, 1.875rem);
-    
-    @media #{$sm-height} {
-      @include size(8rem, 1.5rem);
-    }
-    @media #{$gl-md} {
-      @include size(14.55vw, 2.73vw);
+  &__logo {
+    .logo {
+      @include size(10rem, 1.875rem);
+      
+      @media #{$sm-height} {
+        @include size(8rem, 1.5rem);
+      }
+      @media #{$md} {
+        @include size(14.55vw, 2.73vw);
+      }
+      @media #{$xs} {
+        @include size(50vw, 9.38vw);
+      }
     }
   }
-
 }

@@ -5,6 +5,11 @@ $nav-color--hover: $nav-color;
   position: relative;
   margin: 0 0 10vh;
   padding-top: 1rem;
+  
+  @media #{$xs} {
+    padding-top: 7.5vw;
+    margin-bottom: 21.88vw;
+  }
 
   &::after {
     content: '';
@@ -17,6 +22,9 @@ $nav-color--hover: $nav-color;
     
     @media #{$xs-height} {
       bottom: -1.5rem;
+    }
+    @media #{$xs} {
+      bottom: -10.5vw;
     }
   }
 
@@ -44,6 +52,11 @@ $nav-color--hover: $nav-color;
     
     @media #{$sm-height} {
       padding: 1.5rem;
+    }
+    
+    @media #{$xs} {
+      padding: 7.5vw 0;
+      font-size: 9vw;
     }
     
     &.disabled {

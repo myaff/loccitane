@@ -38,6 +38,10 @@ $btn-dark-bg--hover: $btn-dark-bg;
     font-size: 2.175vw;
     width: 16.35vw;
   }
+  @media #{$xs} {
+    font-size: 7.5vw;
+    width: 56.25vw;
+  }
   
   &:hover,
   &:focus,
@@ -55,6 +59,9 @@ $btn-dark-bg--hover: $btn-dark-bg;
     
     @media #{$md-landing} {
       width: 27.25vw;
+    }
+    @media #{$xs} {
+      width: 100%;
     }
   }
   

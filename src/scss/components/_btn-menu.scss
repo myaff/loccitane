@@ -11,8 +11,11 @@
   @media #{$sm-height} {
     @include size(2.5rem, 1.5rem);
   }
-  @media #{$gl-md} {
+  @media #{$md} {
     @include size(4.55vw, 2.73vw);
+  }
+  @media #{$xs} {
+    @include size(15.63vw, 9.38vw);
   }
   
   &:hover,

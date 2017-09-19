@@ -47,7 +47,7 @@
           <div class="tp-body--main a-fade-slide a-ordered">
             <p>Бальзам прекрасно разглаживает морщинки и повышает упругость кожи вокруг глаз, снимает отечность и раздражение. В его состав входят воск гречихи и экстракт ясеня, которые помогают избавиться от темных кругов под глазами. А цветочная вода розы успокаивает кожу и придает взгляду свежесть и сияние. Невероятно нежную текстуру средства особенно оценят женщины с сухой кожей.</p>
           </div>
-          <button class="btn mt-5 a-fade-slide a-ordered">Купить</button>
+          <a href="http://www.loccitane.ru/immortelle-collection,9,2,73834,806143.htm?utm_source=psychologies&utm_medium=interview_podkaminskaya&utm_campaign=RURU_divineOil_storeVisit_skincare_immortelleDivine " target="_blank" class="btn mt-5 a-fade-slide a-ordered">Купить</a>
         </div>
       </div>
       <div class="ep-5 l-block--center mt-8 a-scroll-box">

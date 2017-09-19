@@ -22,6 +22,7 @@ $color--heading: #000000;
 $color--primary: #f0b500;
 
 $body-bg: linear-gradient(to top, #e6ebef 0%, #f1f2f7 60%, #f6f7f9 100%);
+$body-bg--mobile: #f9f9f9;
 $header-bg: transparent;
 $header-color: #000000;
 $btn-bg: transparent;
@@ -101,3 +102,9 @@ $sm-height: 'screen and (max-height: 799px)';
 $xs-height: 'screen and (max-height: 599px)';
 $min-animation: 'screen and (min-width: 64rem)';
 $md-landing: 'screen and (max-width: 68.75rem)';
+$xxs:        "screen and (max-width: 30rem)" !default; // up to 480px
+$xs:        "screen and (max-width: 40rem)" !default; // up to 640px
+$sm:        "screen and (max-width: 52rem)" !default; // max 832px
+$md:        "screen and (max-width: 64rem)" !default; // max 1024px
+$lg:        "screen and (max-width: 80rem)" !default; // max 1280px
+$md-up:     "screen and (min-width: 64.06rem)" !default; // min 1024px

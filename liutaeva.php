@@ -17,7 +17,7 @@
                 отчасти это издержки профессии: приходится почти ежедневно накладывать на лицо много грима. Поэтому в уходе делаю акцент на питание и увлажнение. Где-то после 45 лет специально стала искать продукты с антивозрастным уходом – конечно, они дают более выраженный эффект. В любое время года я использую «Божественное масло Иммортель» оно насыщенное, но не тяжелое.</p>
             </div>
           </div>
-          <div class="tp-heading--huge mb-4 a-fade-slide a-ordered">Люблю натуральные продукты</div>
+          <div class="tp-heading--huge ml-8 mb-4 a-fade-slide a-ordered">Люблю натуральные продукты</div>
           <div class="text-block ml-8 a-fade-slide a-ordered">
             <div class="tp-body--main">
               <p>У меня в ванной всегда стоит банка с медом. Я наношу его на сухое тело хлопающими движениями и потом в душе смываю. Он прекрасно очищает поры, разглаживает кожу и усиливает кровообращение.</p>
@@ -56,7 +56,7 @@
             <div class="tp-body--main a-fade-slide a-ordered">
               <p>Это масло вкусно пахнет, быстро впитывается и не оставляет липкой пленки на лице, что, безусловно, оценят многие женщины. Благодаря входящим в состав эфирным маслам и цветку иммортеля, известного своими омолаживающими свойствами, масло очень хорошо подтягивает, питает и защищает кожу.</p>
             </div>
-            <button class="btn mt-5 mb-7 a-fade-slide a-ordered">Купить</button>
+            <a href="http://www.loccitane.ru/immortelle-collection,9,2,73834,806143.htm?utm_source=psychologies&utm_medium=interview_lyutaeva&utm_campaign=RURU_divineOil_storeVisit_skincare_immortelleDivine" target="_blank" class="btn mt-5 mb-7 a-fade-slide a-ordered">Купить</a>
           </div>
           <div class="text-block a-fade-slide">
             <div class="tp-body--main">
