@@ -54,6 +54,7 @@
             <div class="tp-body--main a-fade-slide a-ordered">
               <p>Благодаря легкой текстуре крем мгновенно впитывается, позволяя коже дышать. Особые достоинства средства – в его разнонаправленном действии.  Крем защищает от агрессивного воздействия окружающей среды и УФ-лучей, и в то же время борется с первыми признаками старения кожи. При регулярном применении морщины разглаживаются, кожа становится более эластичной и сияющей.</p>
             </div>
+            <a href="http://www.loccitane.ru/immortelle-collection,9,2,73834,806143.htm?utm_source=psychologies&utm_medium=interview_kurkova&utm_campaign=RURU_divineOil_storeVisit_skincare_immortelleDivine" target="_blank" class="btn mt-3 mb-5 a-fade-slide a-ordered">Купить</a>
           </div>
         </div>
         <div class="blockquote-wrapper ml-4 a-scroll-box">

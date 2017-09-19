@@ -50,7 +50,7 @@
     text-transform: uppercase;
     margin-left: 0.25rem;
     
-    @media #{$gl-sm} {
+    @media #{$sm} {
       display: none;
     }
   }
