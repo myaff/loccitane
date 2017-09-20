@@ -2,7 +2,7 @@
 
   display: block;
   
-  .header__logo &__wrapper {
+  &__wrapper.header__logo {
     display: flex;
     align-items: center;
     justify-content: flex-end;

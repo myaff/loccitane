@@ -88,6 +88,7 @@ $dot-bg: #000000;
   .owl-#{$dir} {
     &, &::after {
       background-image: url('../img/arrow-#{$dir}.svg');
+      background-size: contain;
     }
   }
 }
