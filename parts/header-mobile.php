@@ -4,11 +4,7 @@ if(strpos($_SERVER['REQUEST_URI'], '/index.php') || preg_match('/loccitane\/mobi
 	$mainPage = true;
 }
 $pathArr = explode('/', $_SERVER['REQUEST_URI']);
-$rootDeep = count($pathArr) - 3;
-$root = '';
-for ($i = 0; $i < $rootDeep; $i++) {
-  $root .= '../';
-}
+$root = '../';
 $currentPage = end($pathArr);
 $womans = [
   'eg' => [
