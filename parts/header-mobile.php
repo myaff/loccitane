@@ -43,7 +43,7 @@ $womans = [
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=640">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="<?=$root;?>build/css/main.css" rel="stylesheet">
   <script src="<?=$root;?>build/js/vendor/jquery-3.1.1.slim.min.js"></script>
