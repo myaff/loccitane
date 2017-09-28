@@ -13,6 +13,7 @@
 <script src="<?=$root;?>build/js/vendor/ScrollToPlugin.min.js"></script>
 <script src="<?=$root;?>build/js/vendor/ScrollMagic.min.js"></script>
 <script src="<?=$root;?>build/js/vendor/animation.gsap.min.js"></script>
+<script src="<?=$root;?>build/js/vendor/share.js"></script>
 <script src="<?=$root;?>build/js/main.js"></script>
 </body>
 </html>

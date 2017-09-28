@@ -54,10 +54,11 @@ $modal-height: 100vh;
     background: $modal-bg--aside;
     top: 1.25rem;
     right: 1.25rem;
-    bottom: 1.25rem;
+    //bottom: 1.25rem;
     left: auto;
     height: auto;
     padding: 1rem;
+    bottom: auto;
     
     @media #{$xs-height} {
       bottom: initial;
@@ -164,6 +165,16 @@ $modal-height: 100vh;
     @include null-childs-margin();
     p {
       margin: 2vh 0;
+    }
+    ._code{
+      font-family: $font--accent;
+    }
+
+    ._sep{
+      margin: 0 auto 2vh;
+      height: 2px;
+      width: 7.625rem;
+      background-color: #000;
     }
     .btn.btn--center {
       margin-top: 4vh;

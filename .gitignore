@@ -86,3 +86,6 @@ $RECYCLE.BIN/
 
 # Local utility files
 design/*
+
+# Ide
+.idea

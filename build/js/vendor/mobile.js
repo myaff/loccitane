@@ -9,5 +9,11 @@ function isMobile() {
 }
 
 if(isMobile() === true) {
-    window.location  = '/mobile';
+    var hash = window.location.hash;
+
+    if (hash) {
+        window.location  = '/mobile'+hash;
+    } else {
+        window.location  = '/mobile';
+    }
 }

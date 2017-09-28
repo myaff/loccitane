@@ -53,6 +53,24 @@ function init(){
         closeModal(modal);
       }
   });
+
+    function openModalHash() {
+        let hash = ['competition'],
+            isFullscreen,
+            modal,
+            i;
+
+        for (i = 0;i < hash.length; i++) {
+            if ( '#'+hash[i] == window.location.hash && $('#'+hash[i]).length) {
+                modal = $('#'+hash[i]);
+                isFullscreen = modal.attr('data-fullscreen') !== undefined;
+
+                openModal(modal, isFullscreen);
+            }
+        }
+    }
+
+    openModalHash();
 }
 
 module.exports = {init, openModal, closeModal};

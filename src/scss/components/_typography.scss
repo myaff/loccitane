@@ -185,6 +185,21 @@ blockquote {
   }
 }
 
+@supports (-ms-ime-align:auto) {
+  blockquote::before, blockquote::after{
+    @include size(3.225rem, 2.5rem);
+  }
+}
+
+@media all and (-ms-high-contrast:none){
+  blockquote::before, blockquote::after{
+    @include size(3.225rem, 2.5rem);
+  }
+  *::-ms-backdrop, blockquote::before, blockquote::after{
+    @include size(3.225rem, 2.5rem);
+  }
+}
+
 .text-block {
   max-width: 24.75rem;
   
