@@ -78,6 +78,10 @@
     .page--tk &{
       font-size: 90px;
     }
+    .page--ah & {
+      font-size: 67px;
+      letter-spacing: 0;
+    }
     
     @media #{$md-landing} {
       font-size: 9vw;
@@ -86,6 +90,9 @@
       .page--tk &{
         font-size: 8.18vw;
       }
+      .page--ah & {
+        font-size: 6.1vw;
+      }
     }
     @media #{$xs} {
       font-size: 17vw;
@@ -93,6 +100,9 @@
       .page--ep &,
       .page--tk & {
         font-size: 9.5vw;
+      }
+      .page--ah & {
+        font-size: 6.1vw;
       }
     }
   }

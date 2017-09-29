@@ -1,0 +1,98 @@
+.ah {
+  &-1 {
+    img {
+      @media #{$md-landing} {
+        max-height: 65.64vw;
+      }
+    }
+    .img-wrapper {
+      @include absolute(top 11.5rem left -10px);
+      @media #{$md-landing} {
+        top: 16.73vw;
+      }
+    }
+    .page__heading {
+      @include absolute(top 10px left 0);
+    }
+    .text-block {
+      max-width: 28rem;
+    }
+    .text-block-wrapper {
+      margin-left: 35rem;
+      @media #{$md-landing} {
+        margin-left: 50.91vw;
+      }
+    }
+  }
+  &-2 {
+    .img-wrapper {
+      @include absolute(top -4rem left 30.5rem);
+      @media #{$md-landing} {
+        top: -5.82vw;
+        left: 44.36vw;
+      }
+    }
+    
+    .text-block {
+      max-width: 23rem;
+    }
+    
+    img {
+      @media #{$md-landing} {
+        max-height: 37.55vw;
+      }
+    }
+  }
+  &-4 {
+    .img-wrapper {
+      @include absolute(top 0 left 0);
+      
+      @media #{$md-landing} {
+        img {
+          max-height: 74.82vw;
+        }
+      }
+    }
+    .text-block-wrapper {
+      margin-left: 42rem;
+      @media #{$md-landing} {
+        margin-left: 61vw;
+      }
+      
+      img {
+        margin-left: -5rem;
+        margin-bottom: -1.7rem;
+        @media #{$md-landing} {
+          margin-left: -7.27vw;
+          margin-bottom: -2.47vw;
+        }
+      }
+      
+      @media #{$md-landing} {
+        img {
+          max-height: 32vw;
+        }
+      }
+    }
+    .blockquote-wrapper {
+      @include absolute(bottom 2rem left 0);
+      width: 38rem;
+      @media #{$md-landing} {
+        bottom: 2.91vw;
+        width: 55.27vw;
+      }
+    }
+    .text-block {
+      max-width: 24rem;
+      @media #{$md-landing} {
+        max-width: 34.91vw;
+      }
+    }
+    img + .text-block {
+      width: 22.9rem;
+      @media #{$md-landing} {
+        width: 33.31vw;
+      }
+    }
+  }
+}

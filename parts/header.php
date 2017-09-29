@@ -13,11 +13,11 @@ $womans = [
     'img' => 'build/img/girls/tolkanina.png',
     'active' => true
   ],
-  'os' => [
-    'name' => 'Олеся Судзиловская',
-    'url' => 'sudzilovskaya.php',
-    'img' => 'build/img/girls/sudzilovskaya.png',
-    'active' => false
+  'ah' => [
+    'name' => 'Алена Хмельницкая',
+    'url' => 'hmelnitskaya.php',
+    'img' => 'build/img/girls/hmelnitskaya.png',
+    'active' => true
   ],
   'rk' => [
     'name' => 'Равшана Куркова',
