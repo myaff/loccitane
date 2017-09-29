@@ -139,6 +139,10 @@ $modal-height: 100vh;
     text-decoration: underline;
     margin-bottom: 1vh;
     
+    a {
+      color: inherit;
+    }
+    
     @media #{$xs} {
       margin-bottom: 5vw;
     }
