@@ -9,7 +9,7 @@ function isMobile() {
 }
 
 if(isMobile() === true) {
-    var hash = window.location.hash;
+    let hash = window.location.hash;
 
     if (hash) {
         window.location  = '/mobile'+hash;

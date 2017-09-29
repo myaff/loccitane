@@ -7,11 +7,11 @@ $pathArr = explode('/', $_SERVER['REQUEST_URI']);
 $root = '../';
 $currentPage = end($pathArr);
 $womans = [
-  'eg' => [
-    'name' => 'Екатерина Гусева',
-    'url' => 'guseva.php',
-    'img' => 'build/img/girls/guseva.png',
-    'active' => false
+  'tk' => [
+      'name' => 'Любовь Толкалина',
+      'url' => 'tolkanina.php',
+      'img' => 'build/img/girls/tolkanina.png',
+      'active' => true
   ],
   'os' => [
     'name' => 'Олеся Судзиловская',

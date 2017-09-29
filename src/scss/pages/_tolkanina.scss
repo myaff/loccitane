@@ -1,0 +1,125 @@
+.tk {
+  &-2 {
+    padding-top: 0 !important;
+    img {
+      margin-right: -7rem;
+      @media #{$md-landing} {
+        margin-right: -10.18vw;
+        max-height: 56.36vw;
+      }
+    }
+    .text-block {
+      margin-left: 43rem;
+      max-width: 23.75rem;
+
+      @media #{$md-landing} {
+        margin-left: 62.55vw;
+        max-width: 34.55vw;
+      }
+    }
+    .img-wrapper {
+      @include absolute(top 0 left 0);
+    }
+  }
+  &-3 {
+    .img-wrapper {
+      @include absolute(top -8rem left 30.5rem);
+
+      @media #{$md-landing} {
+        top: -11.64vw;
+        left: 44.36vw;
+      }
+    }
+    img {
+      @media #{$md-landing} {
+        max-height: 40.91vw;
+      }
+    }
+    .blockquote-wrapper {
+      @include absolute(top 326px left 30.5rem);
+
+      blockquote{
+        margin-top: 2rem !important;
+      }
+
+      @media #{$md-landing} {
+        top: 29.64vw;
+        left: 44.36vw;
+      }
+    }
+  }
+  &-4 {
+    .text-block {
+      margin-left: 44.2rem;
+      margin-top: -4rem;
+      @media #{$md-landing} {
+        margin-top: -5.82vw;
+        margin-left: 64.29vw;
+      }
+      .btn{
+        margin-top: 3rem !important;
+      }
+      img {
+        margin-left: -4.1rem;
+        @media #{$md-landing} {
+          max-height: 32vw;
+          margin-left: -5.96vw;
+        }
+        & ~ .tp-body--main {
+          max-width: 23.125rem;
+          @media #{$md-landing} {
+            max-width: 33.64vw;
+          }
+        }
+      }
+    }
+    .img-wrapper {
+      @include absolute(top 0 left 6rem);
+      @media #{$md-landing} {
+        left: 8.73vw;
+
+        img {
+          max-height: 96vw;
+        }
+      }
+    }
+  }
+  &-5 {
+    margin-bottom: 6rem;
+    margin-top: 2rem !important;
+
+    .btn {
+      margin-top: 6.5rem;
+    }
+
+    blockquote{
+      max-width: 41.5rem;
+    }
+
+    @media #{$md-landing} {
+      margin-bottom: 8.73vw;
+      .btn {
+        margin-bottom: 9.45vw;
+      }
+    }
+  }
+
+  &-6{
+    margin-top: 0 !important;
+    max-width: 23.75rem;
+
+    @media #{$md-landing}{
+      max-width: 33vw !important;
+    }
+  }
+
+  &-7{
+    margin-top: 2rem !important;
+  }
+
+  &-m8 {
+    img {
+      max-height: 75vw;
+    }
+  }
+}

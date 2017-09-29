@@ -101,7 +101,7 @@
                   <p>поставить хэштег<br/> <span class="highlight">#LoccitaneDivine</span><br/> и отметить на фото @loccitane_ru</p>
                   <p>Мы выберем три лучшие работы по хэштегу и 30 октября объявим победителей, которые получат новинки L'Occitane для двухэтапного очищения кожи лица из линии Divine.</p>
                   <div class="_sep"></div>
-                  <p>Ваш подарок по промокоду DIVINE: 1 000 Р при покупке от 3 000 Р и Крем Божественный Иммортель 4 мл при любой покупке! Только в интернет-магазине L’OCCITANE до 11 октября </p>
+                  <p>Ваш подарок по промокоду DIVINE: 1 000 Р при покупке от 3&nbsp;000&nbsp;Р и Крем Божественный Иммортель 4 мл при любой покупке! Только в интернет-магазине L’OCCITANE до 11 октября </p>
                   <a href="http://www.loccitane.ru/immortelle-collection,9,2,73834,806143.htm?utm_source=psychologies&utm_medium=interview_lyutaeva&utm_campaign=RURU_divineOil_storeVisit_skincare_immortelleDivine" class="btn mt-3 mb-5 a-fade-slide a-ordered" target="_blank">Купить</a>
                   <p class="_code">Промокод: <b>DIVINE</b></p>
               </div>

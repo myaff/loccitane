@@ -59,6 +59,7 @@
       font-size: 17vw;
       
       .girl--ep &,
+      .girl--tk &,
       .girl--os & {
         font-size: 9.5vw;
       }
@@ -73,21 +74,24 @@
   &--big &__last-name {
     font-size: 102px;
     
-    .page--ep & {
+    .page--ep &,
+    .page--tk &{
       font-size: 90px;
     }
     
     @media #{$md-landing} {
       font-size: 9vw;
       
-      .page--ep & {
+      .page--ep &,
+      .page--tk &{
         font-size: 8.18vw;
       }
     }
     @media #{$xs} {
       font-size: 17vw;
       
-      .page--ep & {
+      .page--ep &,
+      .page--tk & {
         font-size: 9.5vw;
       }
     }
